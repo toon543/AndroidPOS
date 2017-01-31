@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Activity.MainActivity">
+
+    TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="POS Owner"
+            android:id="@+id/textView"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:textColor="#0000ff" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Management Application"
+            android:id="@+id/textView2"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ffffff"
+            android:background="#0000ff"
+            android:textAlignment="center" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Username"
+            android:id="@+id/usernameLabel"
+            android:layout_marginTop="50dp"
+            android:textColor="#000000"
+            android:textAlignment="center" />
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/usernameField"
+            android:layout_gravity="center_horizontal"
+            android:singleLine="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Password"
+            android:id="@+id/passwordLabel"
+            android:layout_marginTop="25dp"
+            android:textColor="#000000"
+            android:textAlignment="center" />
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/passwordField"
+            android:layout_gravity="center_horizontal"
+            android:singleLine="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:text="Submit"
+            android:id="@+id/submit"
+            android:layout_gravity="center_horizontal"
+            android:background="#0015ff"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="status"
+            android:id="@+id/status"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ff0000" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50px"
+            android:weightSum="1"
+            android:gravity="center_vertical|center_horizontal">
+
+            <EditText
+                android:layout_width="216dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/serverUrl"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.53"
+                android:singleLine="true" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:text="Change Server"
+                android:id="@+id/changeServerUrl"
+                android:background="#ff6a00"
+                android:textColor="#ffffff"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
